@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block body %}
+<main class="mt-5">
+  <div class="container mynav">
+    <form method="POST">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit" class="btn btn-primary">Signup</button>
+    </form>
+        
+  </div>
+</main>
+{% endblock body %}
